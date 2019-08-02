@@ -1,0 +1,51 @@
+#include<stdio.h>
+void display(int arr1[] , int total);
+void reversedisplay(int arr1[],int total);
+int main(){
+
+	int arr1[20],total;
+        
+	printf("enter the total numbers to be displayed \n ");
+         scanf("%d",&total);
+
+	printf("enter the numbers to be displayed \n");
+         
+		  for(int i=0;i<total;i++)
+		  {
+			  scanf("%d",&arr1[i]);
+		  }
+	 
+
+	 printf("\n the numbers are displayed as \n");
+	 display(arr1,total);
+
+	 printf("\n the numbers displayed in reverse order are \n");
+	 reversedisplay(arr1,total);
+return 0;	 
+
+}
+
+void display(int arr1[],int total)
+{
+   
+for(int i=0;i<total;i++)
+{
+
+printf("%d ",arr1[i]);
+
+
+}
+
+}
+
+void reversedisplay(int arr1[],int  total){
+
+	for(int i=total-1;i>=0;i--)
+	{ 
+            printf("%d ",arr1[i]);
+
+		 }
+
+
+}
+	
